@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """function that returns the length of a list"""
 from typing import Iterable, Sequence, List, Tuple
 

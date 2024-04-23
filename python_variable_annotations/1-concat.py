@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """function that's gonna concatenate 2 strings"""
 
 

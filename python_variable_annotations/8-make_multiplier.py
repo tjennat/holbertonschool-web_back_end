@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """function that multiplies a float by multiplier."""
 from typing import Callable
 

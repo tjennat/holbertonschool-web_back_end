@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """function that's gonna return a tuple"""
 from typing import Union, Tuple
 

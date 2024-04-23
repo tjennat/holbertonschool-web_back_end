@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """function that's gonna summarize a list of floats"""
 from typing import List
 
