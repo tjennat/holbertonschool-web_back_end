@@ -1,6 +1,5 @@
-#!/user/bin/env python3
+#!/usr/bin/env python3
 """altering the task_wait_n func"""
-
 from typing import List
 
 
