@@ -1,25 +1,22 @@
 #!/user/bin/env python3
-"""altering the task_wait_n function"""
+"""altering the task_wait_n func"""
 
 from typing import List
-import asyncio
-import random
 
 
 task_wait_random = __import__('3-tasks').task_wait_random
 
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
-    """returning delays."""
-    lists_task = []
-    for _ in range(n):
-        task = asyncio.create_task(task_wait_random(max_delay))
-        lists_task.append(task)
-    delays = await asyncio.gather(*lists_task)
-    for i in range(len(delays)):
-        for j in range(len(delays) - 1):
-            if delays[j] > delays[j + 1]:
-                temp = delays[j]
-                delays[j] = delays[j + 1]
-                delays[j + 1] = temp
-    return delays
+    """returning the list of delay_l"""
+    delay_l = []
+    for _ in range(1, n + 1):
+        delay_l.append(await task_wait_random(max_delay))
+    for i in range(1, n):
+        cle = delay_l[i]
+        j = i - 1
+        while j >= 0 and delay_l[j] > cle:
+            delay_l[j + 1] = delay_l[j]
+            j -= 1
+        delay_l[j + 1] = cle
+    return delay_l
