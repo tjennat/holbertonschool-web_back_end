@@ -1,5 +1,6 @@
 #!/user/bin/env python3
 """altering the task_wait_n function"""
+
 from typing import List
 import asyncio
 import random
