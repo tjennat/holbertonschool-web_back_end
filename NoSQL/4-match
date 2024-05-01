@@ -1,0 +1,2 @@
+// gonna lists all docs with name="Holberton school" in the db school
+db.school.find({name: "Holberton school"})
