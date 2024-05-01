@@ -1,2 +1,2 @@
-// Insert a doc in the db school
-db.school.insert({"name" : "Holberton school"})
+// gonna creates or uses the database my_db
+use my_db
